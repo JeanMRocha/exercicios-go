@@ -1,0 +1,42 @@
+Passo a passo: adicionar projeto no Git pela primeira vez
+
+Entrar na pasta do projeto
+
+cd "C:\Users\Micro\meu-projeto-go"
+
+
+Iniciar o repositório Git
+
+git init
+
+
+Adicionar todos os arquivos ao controle do Git
+
+git add .
+
+
+Criar o primeiro commit
+
+git commit -m "primeiro commit do projeto"
+
+
+Vincular ao repositório no GitHub (que você já criou antes)
+👉 Exemplo com seu repositório exercicios-go:
+
+git remote add origin git@github.com:JeanMRocha/exercicios-go.git
+
+
+(estou usando SSH já que configuramos a chave, mas pode ser HTTPS se preferir)
+
+Enviar o código para o GitHub
+
+git branch -M main
+git push -u origin main
+
+
+✅ Pronto! Agora sua pasta local está conectada ao GitHub.
+Depois, para cada nova alteração, você só precisa rodar:
+
+git add .
+git commit -m "mensagem explicando a mudança"
+git push
